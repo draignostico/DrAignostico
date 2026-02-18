@@ -1,23 +1,27 @@
-import { Link } from 'react-router-dom';
-import logo from "../img/logo.png";
+import { Link } from "react-router-dom";
 import "../styles/navbar.css";
+import logoSrc from "../img/logo.png";
 
-const Navbar = () => {
+export default function Navbar() {
   return (
-    <nav className="navbar">
+    <header className="navbar">
       <div className="navbar-container">
         <div className="logo">
-          <img src={logo} alt="Dr. AIgnóstico" />
-          <span>Dr.<strong>AI</strong>gnóstico</span>
+          <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none', color: 'inherit' }}>
+            <img src={logoSrc} alt="Logotipo" />
+            <span>
+              Dr.<strong>AI</strong>gnóstico
+            </span>
+          </Link>
         </div>
-        <ul className="nav-links">
-          <li><Link to="/" style={{background: 'none', color: '#0066e6'}}>Sobre nós</Link></li>
-          <li><Link to="/" style={{background: 'none', color: '#0066e6'}}>Nossos Planos</Link></li>
-          <li><Link to="/login" className="btn-login" style={{border: '1px solid #0066e6', padding: '8px 20px', borderRadius: '5px'}}>Login</Link></li>
-        </ul>
-      </div>
-    </nav>
-  );
-};
 
-export default Navbar;
+        <nav className="nav-links">
+          <a href="#sobre">Sobre nós</a>
+          <a href="#planos">Nossos Planos</a>
+          {/* O botão de login agora aponta para a rota correta */}
+          <Link to="/login" className="btn-login">Login</Link>
+        </nav>
+      </div>
+    </header>
+  );
+}

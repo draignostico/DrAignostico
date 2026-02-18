@@ -1,20 +1,16 @@
 .home-container {
   margin-top: 70px;
   width: 100%;
-  overflow-x: hidden;
 }
 
-/* ================= HERO ================= */
-
+/* Seção HERO */
 .hero {
-  background: linear-gradient(135deg, #0b2f8a 0%, #003c9e 100%);
+  background-color: #0b2f8a;
   color: #ffffff;
-  padding: 120px 8%;
+  padding: 100px 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 60px;
-  flex-wrap: wrap;
 }
 
 .hero-content {
@@ -22,49 +18,36 @@
 }
 
 .hero h1 {
-  font-size: 48px;
+  font-size: 42px;
   line-height: 1.2;
   margin-bottom: 25px;
-  font-weight: 700;
 }
 
 .hero p {
-  font-size: 17px;
-  line-height: 1.7;
-  opacity: 0.95;
+  font-size: 16px;
+  line-height: 1.6;
+  opacity: 0.9;
 }
 
 .hero-image img {
-  max-width: 450px;
-  width: 100%;
-  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.25));
-  animation: float 4s ease-in-out infinite;
+  max-width: 420px;
 }
 
-@keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-12px); }
-  100% { transform: translateY(0px); }
-}
-
-/* ================= BENEFÍCIOS ================= */
-
+/* Seção Benefícios */
 .benefits-intro {
   text-align: center;
-  padding-top: 80px;
-  font-size: 20px;
-  font-weight: 600;
-  color: #0b2f8a;
+  padding-top: 60px;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .benefits {
   background-color: #ffffff;
-  padding: 60px 8% 100px;
+  padding: 40px 100px 80px;
   display: flex;
   justify-content: center;
   gap: 80px;
   text-align: center;
-  flex-wrap: wrap;
 }
 
 .benefit {
@@ -72,36 +55,28 @@
   flex-direction: column;
   align-items: center;
   gap: 15px;
-  transition: 0.3s ease;
-}
-
-.benefit:hover {
-  transform: translateY(-8px);
 }
 
 .benefit img {
   width: 80px;
   height: 80px;
   object-fit: contain;
-  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.15));
 }
 
-/* ================= PLANOS ================= */
-
+/* Seção PLANOS (Correção de Sobreposição) */
 .plans {
   background-color: #f6f6f6;
-  padding: 120px 8%;
+  padding: 100px 80px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 100px;
-  flex-wrap: wrap;
 }
 
 .plans-visual-container {
   position: relative;
   width: 500px;
-  height: 380px;
+  height: 350px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -109,15 +84,12 @@
 
 .plans-main-image img {
   max-width: 450px;
-  width: 100%;
   z-index: 1;
-  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.15));
 }
 
-/* Bolhas */
 .price-bubble {
   position: absolute;
-  background: linear-gradient(135deg, #0066e6, #004bb5);
+  background-color: #0066e6;
   color: #fff;
   border-radius: 50%;
   display: flex;
@@ -126,13 +98,7 @@
   justify-content: center;
   text-align: center;
   z-index: 2;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-  padding: 20px;
-  transition: 0.3s ease;
-}
-
-.price-bubble:hover {
-  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0, 102, 230, 0.2);
 }
 
 .bubble-free {
@@ -151,206 +117,31 @@
 
 .price-bubble strong { font-size: 18px; margin-bottom: 5px; }
 .price-bubble .label { font-size: 14px; opacity: 0.9; }
-.price-bubble h2 { font-size: 36px; margin: 2px 0; }
+.price-bubble h2 { font-size: 38px; margin: 2px 0; }
 .price-bubble .period { font-size: 14px; }
 
 .plans-text {
-  max-width: 480px;
+  max-width: 450px;
 }
 
 .plans-text h2 {
   color: #0b2f8a;
-  font-size: 34px;
+  font-size: 32px;
   margin-bottom: 20px;
 }
 
 .plans-text p {
-  color: #666;
+  color: #888;
   margin-bottom: 30px;
-  line-height: 1.7;
-}
-
-/* Botão */
-.learn-more-btn {
-  background: linear-gradient(135deg, #0066e6, #004bb5);
-  color: #fff;
-  border: none;
-  padding: 14px 32px;
-  border-radius: 8px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 10px 25px rgba(0, 102, 230, 0.3);
-}
-
-.learn-more-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 15px 35px rgba(0, 102, 230, 0.4);
-}
-
-/* ================= SOBRE ================= */
-
-.about-us {
-  padding: 120px 8%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 80px;
-  flex-wrap: wrap;
-}
-
-.about-content {
-  max-width: 600px;
-}
-
-.about-content h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
-  color: #0b2f8a;
-}
-
-.about-content p {
-  margin-bottom: 15px;
-  line-height: 1.7;
-  color: #555;
-}
-
-/* ================= EQUIPE ================= */
-
-.team-section {
-  padding: 120px 8%;
-  text-align: center;
-  background: #f8f9ff;
-}
-
-.team-title {
-  font-size: 32px;
-  margin-bottom: 50px;
-  color: #0b2f8a;
-}
-
-.team-grid {
-  display: flex;
-  justify-content: center;
-  gap: 60px;
-  flex-wrap: wrap;
-}
-
-.team-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-  transition: 0.3s ease;
-}
-
-.team-card:hover {
-  transform: translateY(-8px);
-}
-
-.avatar-circle {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  overflow: hidden;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
-}
-
-.member-name {
-  font-weight: 600;
-  color: #333;
-}
-
-/* ================= FAQ ================= */
-
-.faq-section {
-  padding: 120px 8%;
-}
-
-.faq-main-title {
-  text-align: center;
-  font-size: 32px;
-  margin-bottom: 50px;
-  color: #0b2f8a;
-}
-
-.faq-container {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.faq-item {
-  background: #ffffff;
-  padding: 25px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-}
-
-.faq-question {
-  font-weight: 600;
-  margin-bottom: 10px;
-  color: #0b2f8a;
-}
-
-.faq-answer {
-  color: #555;
   line-height: 1.6;
 }
 
-/* ================= RESPONSIVO ================= */
-
-@media (max-width: 1024px) {
-
-  .hero {
-    flex-direction: column;
-    text-align: center;
-    padding: 80px 6%;
-  }
-
-  .hero h1 {
-    font-size: 36px;
-  }
-
-  .plans {
-    flex-direction: column;
-    gap: 60px;
-  }
-
-  .about-us {
-    flex-direction: column;
-    text-align: center;
-  }
-}
-
-@media (max-width: 768px) {
-
-  .hero h1 {
-    font-size: 28px;
-  }
-
-  .hero p {
-    font-size: 15px;
-  }
-
-  .benefits {
-    gap: 40px;
-  }
-
-  .plans-visual-container {
-    width: 100%;
-    height: auto;
-  }
-
-  .price-bubble {
-    display: none; 
-  }
-
-  .team-grid {
-    gap: 40px;
-  }
-
-  .faq-section {
-    padding: 80px 6%;
-  }
+.learn-more-btn {
+  background-color: #0066e6;
+  color: #fff;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
 }

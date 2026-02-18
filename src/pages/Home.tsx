@@ -3,7 +3,7 @@ import Footer from "../components/Footer";
 import "../styles/home.css";
 import "../styles/somos.css";
 
-// Importação de imagens da pasta img
+
 import acertosSrc from "../img/acertos.png";
 import precisaoSrc from "../img/precisao.png";
 import clarezaSrc from "../img/clareza.png";
@@ -11,7 +11,7 @@ import tempoSrc from "../img/tempo.png";
 import phone from "../img/doctor-phone.png";
 import laptop from "../img/doctor-laptop.png";
 
-// Importação das fotos reais da equipa
+
 import flavioFoto from "../img/flaviofoto.jpeg";
 import evellynFoto from "../img/evellynfoto.jpeg";
 import leonardoFoto from "../img/leonardofoto.jpeg";
