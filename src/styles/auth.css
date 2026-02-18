@@ -1,0 +1,115 @@
+/* Estilos para as páginas de Login, Cadastro e Recuperação */
+.auth-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .auth-side-blue {
+    display: none; /* Esconde no mobile */
+    width: 50%;
+    background-color: #0056b3;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+  }
+  
+  @media (min-width: 768px) {
+    .auth-side-blue { display: flex; }
+  }
+  
+  .auth-side-white {
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  @media (min-width: 768px) {
+    .auth-side-white { width: 50%; padding: 0 6rem; }
+  }
+  
+  .auth-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #000;
+  }
+  
+  .auth-form {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .auth-input-group {
+    margin-bottom: 1rem;
+  }
+  
+  .auth-input-group label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+  
+  .auth-input {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #fdf8f8;
+    border: 1px solid #e5e5e5;
+    border-radius: 0.75rem;
+    outline: none;
+  }
+  
+  .auth-button {
+    width: 100%;
+    background-color: #003366;
+    color: white;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    transition: background 0.3s;
+  }
+  
+  .auth-button:hover {
+    background-color: #002244;
+  }
+  
+  .auth-link {
+    color: #0056b3;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  
+  .auth-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Estilo específico para a tela de Análise */
+  .analysis-container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .analysis-bg-top {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50%;
+    background-color: #0056b3;
+    z-index: -1;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+  }

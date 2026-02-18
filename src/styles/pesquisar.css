@@ -1,0 +1,54 @@
+.pesquisar-layout {
+  display: flex;
+  height: 100vh;
+  background-color: #d9d9d9;
+}
+
+.pesquisar-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.pesquisar-container {
+  padding: 40px;
+}
+
+.pesquisar-card {
+  background-color: #ececec;
+  padding: 25px;
+  border-radius: 8px;
+  width: 70%;
+}
+
+.pesquisar-card h3 {
+  color: #1e3a8a;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.pesquisar-select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  background-color: #bfbfbf;
+  font-size: 14px;
+  outline: none;
+}
+
+.pesquisar-btn {
+  margin-top: 25px;
+  background-color: #173f8a;
+  color: white;
+  border: none;
+  padding: 12px 40px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.pesquisar-btn:hover {
+  background-color: #0f2e66;
+}
