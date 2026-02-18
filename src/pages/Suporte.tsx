@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "../styles/suporte.css";
+import "../styles/Suporte.css";
 
 export default function Suporte() {
   return (
@@ -27,3 +27,4 @@ export default function Suporte() {
     </div>
   );
 }
+
