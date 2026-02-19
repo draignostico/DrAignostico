@@ -1,51 +1,67 @@
+import React from "react";
+import Sidebar from "../components/Sidebar";
+import DashboardNavbar from "../components/DashboardNavbar";
+import { Camera, Eye, User } from "lucide-react";
+import "../styles/perfil.css";
 
-import DashboardLayout from '../components/DashboardLayout';
-import '../styles/dashboard.css';
-
-export default function Perfil() {
+const Perfil: React.FC = () => {
   return (
-    <DashboardLayout>
-      <div className="profile-container">
-        
-        <div className="profile-avatar-large">
-           <img src="" alt="" style={{width: '100%', height: '100%', borderRadius: '50%'}} />
-           <div style={{position: 'absolute', bottom: '0', right: '0', background: 'white', padding: '5px', borderRadius: '5px', boxShadow: '0 2px 5px rgba(0,0,0,0.2)'}}>
-             📷
-           </div>
-        </div>
+    <div className="dashboard-layout">
+      <Sidebar />
 
-        
-        <div className="auth-form-wrapper" style={{maxWidth: '100%'}}> 
-        
-          <div className="input-group">
-            <label>Nome:</label>
-            <input type="text" placeholder="Flávio Noim" style={{backgroundColor: 'white'}} />
-          </div>
+      <main className="main-content">
+        <DashboardNavbar />
 
-          <div className="input-group">
-            <label>Email:</label>
-            <input type="email" placeholder="flavio@gmail.com" style={{backgroundColor: 'white'}} />
-          </div>
-
-          <div style={{display: 'flex', gap: '20px'}}>
-            <div className="input-group" style={{flex: 1}}>
-                <label>CRM:</label>
-                <input type="text" placeholder="00000010" style={{backgroundColor: 'white'}} />
+        <div className="perfil-page-container">
+          {/* Cabeçalho Azul de Fundo */}
+          <div className="perfil-blue-header">
+            <div className="profile-avatar-wrapper">
+              <div className="avatar-circle">
+                <User size={80} color="#ccc" />
+              </div>
+              <button className="btn-edit-photo">
+                <Camera size={16} />
+              </button>
             </div>
-            <div className="input-group" style={{flex: 1}}>
-                <label>Senha:</label>
-                <div style={{position: 'relative'}}>
-                    <input type="password" placeholder="**********" style={{backgroundColor: 'white'}} />
-                    <span style={{position: 'absolute', right: '10px', top: '15px', cursor: 'pointer'}}>👁️</span>
+          </div>
+
+          {/* Card do Formulário */}
+          <div className="profile-form-card">
+            <div className="profile-form-grid">
+              <div className="input-group full-width">
+                <label>Nome:</label>
+                <input type="text" defaultValue="Luiz da Silva Pereira" />
+              </div>
+
+              <div className="input-group full-width">
+                <label>Email:</label>
+                <input type="email" defaultValue="luizmedico@gmail.com" />
+              </div>
+
+              <div className="input-row">
+                <div className="input-group">
+                  <label>CRM:</label>
+                  <input type="text" defaultValue="00000010" />
                 </div>
+
+                <div className="input-group">
+                  <label>Senha:</label>
+                  <div className="password-wrapper">
+                    <input type="password" defaultValue="**********" />
+                    <Eye size={18} className="eye-icon" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="form-footer">
+              <button className="btn-save-profile">Salvar</button>
             </div>
           </div>
-
-          <div style={{display: 'flex', justifyContent: 'center', marginTop: '20px'}}>
-            <button className="btn-auth-submit" style={{width: '200px'}}>Salvar</button>
-          </div>
         </div>
-      </div>
-    </DashboardLayout>
+      </main>
+    </div>
   );
-}
+};
+
+export default Perfil;

@@ -1,12 +1,14 @@
 .app-sidebar {
-  width: 260px;
+  width: 260px; /* Largura fixa */
+  min-width: 260px; /* Impede que encolha */
   height: 100vh;
-  background-color: #003399; /* Azul bem escuro */
+  background-color: #0b2f8a;
   display: flex;
   flex-direction: column;
-  color: white;
+  position: sticky;
+  top: 0;
+  flex-shrink: 0; /* Essencial para não "quebrar" */
 }
-
 .sidebar-config {
   padding: 20px;
   cursor: pointer;

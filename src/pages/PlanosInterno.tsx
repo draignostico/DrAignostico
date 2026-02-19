@@ -1,36 +1,57 @@
-// src/pages/PlanosInterno.tsx
-import DashboardLayout from '../components/DashboardLayout';
-import '../styles/dashboard.css';
+import React from "react";
+import Sidebar from "../components/Sidebar";
+import DashboardNavbar from "../components/DashboardNavbar";
+import "../styles/planosInternos.css";
 
-export default function PlanosInterno() {
-  const plans = [1, 2, 3, 4]; 
+const PlanosInterno: React.FC = () => {
+  const plans = [
+    { id: 1, current: true, buttonText: "Seu Plano" },
+    { id: 2, current: false, buttonText: "Assinar Agora" },
+    { id: 3, current: false, buttonText: "Contratar Agora" },
+    { id: 4, current: false, buttonText: "Contratar Agora" },
+  ];
 
   return (
-    <DashboardLayout>
-      <div className="plans-grid-internal">
-        {plans.map((item) => (
-          <div key={item} className="plan-card-internal">
-            <h3>Plano mega</h3>
-            <div className="plan-price">
-              R$ 99,<span style={{fontSize: '16px'}}>90</span><span style={{fontSize: '14px', fontWeight: 'normal'}}>/mês</span>
-            </div>
+    <div className="dashboard-layout">
+      <Sidebar />
+      <div className="main-content">
+        <DashboardNavbar />
+        
+        <div className="plans-container">
+          <div className="plans-grid">
+            {plans.map((plan) => (
+              <div key={plan.id} className="plan-card">
+                <h2 className="plan-title">Plano mega</h2>
 
-            <div className="plan-credits">
-              <strong style={{fontSize: '24px', display: 'block'}}>75</strong>
-              <span style={{fontSize: '12px'}}>Diagnósticos</span>
-            </div>
+                <div className="plan-price">
+                  <span className="currency">R$</span>
+                  <span className="amount">99</span>
+                  <span className="cents">,90</span>
+                  <span className="period">/mês</span>
+                </div>
 
-            <ul className="plan-features">
-              <li>✔ Diagnóstico</li>
-              <li>✔ Diagnóstico</li>
-              <li>✔ Diagnóstico</li>
-              <li>✔ Diagnóstico</li>
-            </ul>
+                <div className="credits-badge">
+                  <strong>75</strong>
+                  <span>Diagnósticos</span>
+                </div>
 
-            <button className="btn-contract">Contratar Agora</button>
+                <div className="features-grid">
+                  <div className="feature-item"><span>✔</span> Diagnóstico</div>
+                  <div className="feature-item"><span>✔</span> Diagnóstico</div>
+                  <div className="feature-item"><span>✔</span> Diagnóstico</div>
+                  <div className="feature-item"><span>✔</span> Diagnóstico</div>
+                </div>
+
+                <button className={`btn-plan ${plan.current ? 'current' : ''}`}>
+                  {plan.buttonText}
+                </button>
+              </div>
+            ))}
           </div>
-        ))}
+        </div>
       </div>
-    </DashboardLayout>
+    </div>
   );
-}
+};
+
+export default PlanosInterno;
