@@ -5,12 +5,12 @@ import medicoLogin from "../img/medicopaginalogin.jpeg";
 const PaginaLogin: React.FC = () => {
   return (
     <div style={{ display: 'flex', height: '100vh', width: '100vw', fontFamily: 'Inter, sans-serif' }}>
-      {/* Lado Azul - Igual ao seu Hero */}
+      {}
       <div style={{ flex: 1, backgroundColor: '#0b2f8a', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         <img src={medicoLogin} alt="Médico" style={{ maxWidth: '80%', height: 'auto' }} />
       </div>
 
-      {/* Lado Branco - Formulário */}
+      {}
       <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '0 40px', backgroundColor: '#fff' }}>
         <h1 style={{ color: '#0b2f8a', fontSize: '36px', marginBottom: '30px', fontWeight: 'bold' }}>Login</h1>
         <form style={{ width: '100%', maxWidth: '350px', display: 'flex', flexDirection: 'column', gap: '15px' }}>

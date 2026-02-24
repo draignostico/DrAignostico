@@ -15,7 +15,7 @@
 }
 
 .plan-card {
-  background-color: #0b2f8a; /* Azul escuro idêntico à imagem */
+  background-color: #0b2f8a;
   border-radius: 15px;
   padding: 30px;
   color: white;
@@ -32,7 +32,6 @@
   font-weight: 700;
 }
 
-/* Preço com alinhamentos específicos */
 .plan-price {
   margin-bottom: 25px;
   display: flex;
@@ -45,7 +44,6 @@
 .plan-price .cents { font-size: 16px; font-weight: bold; }
 .plan-price .period { font-size: 12px; opacity: 0.8; margin-left: 2px; }
 
-/* Badge de Diagnósticos (Azul claro) */
 .credits-badge {
   background-color: #007bff;
   width: 130px;
@@ -65,7 +63,6 @@
   text-transform: capitalize;
 }
 
-/* Grid de Benefícios */
 .features-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -84,11 +81,10 @@
 }
 
 .feature-item span {
-  color: #2ecc71; /* Verde do check */
+  color: #2ecc71;
   font-weight: bold;
 }
 
-/* Botão de Contratação */
 .btn-plan {
   background-color: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.4);

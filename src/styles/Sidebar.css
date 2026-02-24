@@ -1,14 +1,15 @@
 .app-sidebar {
-  width: 260px; /* Largura fixa */
-  min-width: 260px; /* Impede que encolha */
+  width: 260px;
+  min-width: 260px;
   height: 100vh;
   background-color: #0b2f8a;
   display: flex;
   flex-direction: column;
   position: sticky;
   top: 0;
-  flex-shrink: 0; /* Essencial para não "quebrar" */
+  flex-shrink: 0;
 }
+
 .sidebar-config {
   padding: 20px;
   cursor: pointer;
@@ -46,7 +47,6 @@
   flex-direction: column;
 }
 
-/* NavLink como botão */
 .menu-item {
   display: flex;
   align-items: center;
@@ -67,7 +67,6 @@
   background-color: #0044cc;
 }
 
-/* Rota ativa automática */
 .menu-item.active {
   background-color: #0044cc;
   border-left: 6px solid #00d9ff;

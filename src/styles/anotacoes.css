@@ -1,8 +1,7 @@
-/* Configuração de Layout */
 .dashboard-layout {
   display: flex;
   min-height: 100vh;
-  background-color: #f4f7f9; /* Cinza claro do fundo */
+  background-color: #f4f7f9;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -16,7 +15,6 @@
   padding: 30px 50px;
 }
 
-/* Header */
 .anotacoes-header {
   display: flex;
   justify-content: flex-end;
@@ -38,7 +36,6 @@
   background-color: #08246b;
 }
 
-/* Grid de Relatórios */
 .reports-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
@@ -47,7 +44,7 @@
 
 .report-card {
   background: white;
-  border-radius: 20px; /* Bordas bem arredondadas como na imagem */
+  border-radius: 20px;
   padding: 20px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.02);
   display: flex;
@@ -75,7 +72,6 @@
   margin-top: 8px;
 }
 
-/* Botão Download dentro do Card */
 .btn-download {
   background-color: #0b2f8a;
   color: white;
@@ -97,7 +93,6 @@
   padding: 2px;
 }
 
-/* Modal Styling */
 .modal-overlay {
   position: fixed;
   top: 0;

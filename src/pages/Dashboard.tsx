@@ -11,7 +11,7 @@ const Dashboard: React.FC = () => {
         <DashboardNavbar />
         
         <div className="dash-content">
-          {/* Linha de Cards Superiores */}
+          {}
           <div className="stats-row">
             <div className="stat-card">
               <div className="stat-header">Total de Diagnósticos</div>

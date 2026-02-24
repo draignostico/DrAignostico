@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/dashboardNavbar.css';
-import { Bell, ChevronDown } from 'lucide-react'; // Instale: npm install lucide-react
+import { Bell, ChevronDown } from 'lucide-react';
 
 const DashboardNavbar: React.FC = () => {
   return (

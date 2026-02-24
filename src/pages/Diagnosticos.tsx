@@ -39,7 +39,7 @@ const Diagnosticos: React.FC = () => {
               onChange={(e) => setSintomas(e.target.value)}
             />
 
-            {/* NOVO CAMPO */}
+            {}
             <div className="input-box inicio-sintomas">
               <label>Início dos Sintomas:</label>
               <input
@@ -80,7 +80,7 @@ const Diagnosticos: React.FC = () => {
             </div>
           </div>
 
-          {/* Palpite + Botão */}
+          {}
           <div className="palpite-card">
             <div>
               <h4>Seu Palpite:</h4>

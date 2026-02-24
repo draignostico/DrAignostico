@@ -13,7 +13,7 @@ const Perfil: React.FC = () => {
         <DashboardNavbar />
 
         <div className="perfil-page-container">
-          {/* Cabeçalho Azul de Fundo */}
+          {}
           <div className="perfil-blue-header">
             <div className="profile-avatar-wrapper">
               <div className="avatar-circle">

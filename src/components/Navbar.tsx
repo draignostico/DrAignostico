@@ -18,7 +18,7 @@ export default function Navbar() {
         <nav className="nav-links">
           <a href="#sobre">Sobre nós</a>
           <a href="#planos">Nossos Planos</a>
-          {/* O botão de login agora aponta para a rota correta */}
+          { }
           <Link to="/login" className="btn-login">Login</Link>
         </nav>
       </div>

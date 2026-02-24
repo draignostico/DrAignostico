@@ -43,7 +43,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Seção Planos com Bolhas Corrigidas */}
+        {/* Seção Planos */}
         <section id="planos" className="plans">
           <div className="plans-visual-container">
             <div className="price-bubble bubble-free">
@@ -113,7 +113,7 @@ export default function Home() {
   <h2 className="faq-main-title">FAQ</h2>
   
   <div className="faq-container">
-    {/* Pergunta 1 */}
+    {}
     <div className="faq-item">
       <div className="faq-question">O que é o Dr. AIgnóstico?</div>
       <div className="faq-answer">
@@ -123,7 +123,7 @@ export default function Home() {
       </div>
     </div>
 
-    {/* Pergunta 2 */}
+    {}
     <div className="faq-item">
       <div className="faq-question">O Dr. AIgnóstico é destinado a quem?</div>
       <div className="faq-answer">
@@ -133,7 +133,7 @@ export default function Home() {
       </div>
     </div>
 
-    {/* Pergunta 3 */}
+    {}
     <div className="faq-item">
       <div className="faq-question">Os dados dos usuários são seguros?</div>
       <div className="faq-answer">
@@ -143,7 +143,7 @@ export default function Home() {
       </div>
     </div>
 
-    {/* Pergunta 4 */}
+    {}
     <div className="faq-item">
       <div className="faq-question">O Dr. AIgnóstico pode ser utilizado em atendimentos presenciais e online?</div>
       <div className="faq-answer">
@@ -151,7 +151,7 @@ export default function Home() {
       </div>
     </div>
 
-    {/* Pergunta 5 */}
+    {}
     <div className="faq-item">
       <div className="faq-question">É necessário treinamento para utilizar a plataforma?</div>
       <div className="faq-answer">
@@ -160,7 +160,7 @@ export default function Home() {
       </div>
     </div>
 
-    {/* Pergunta 6 */}
+    {}
     <div className="faq-item">
       <div className="faq-question">Dúvidas</div>
       <div className="faq-answer">

@@ -60,7 +60,7 @@ const Anotacoes: React.FC = () => {
         </div>
       </main>
       
-      {/* O Modal permanece o mesmo, mas a estilização abaixo cuidará do visual */}
+      {}
     </div>
   );
 };

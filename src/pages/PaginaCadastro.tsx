@@ -20,7 +20,7 @@ const PaginaCadastro: React.FC = () => {
           
           <button type="button" className="w-full bg-[#003366] text-white p-4 rounded-xl font-bold mt-6 hover:bg-blue-900 transition">Cadastrar</button>
         </form>
-        {/* Link para voltar ao login */}
+        {}
         <p className="mt-6 text-sm">Já tem uma conta? <Link to="/login" className="text-[#0056b3] font-bold hover:underline">Faça Login</Link></p>
       </div>
     </div>

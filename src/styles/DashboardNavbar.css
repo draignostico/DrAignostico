@@ -1,6 +1,6 @@
 .dash-navbar {
   height: 80px;
-  background-color: #0052cc; /* Azul vibrante da imagem */
+  background-color: #0052cc;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16,7 +16,7 @@
 }
 
 .dash-logo-accent {
-  color: #00d9ff; /* Azul claro do 'Al' */
+  color: #00d9ff;
 }
 
 .dash-nav-actions {
